@@ -160,14 +160,14 @@ function Home() {
               
               <div className="absolute -bottom-0 -left-0 bg-white p-4 rounded-lg shadow-xl animate-float">
           <div className="text-[#23395d]">
-            <div className="font-bold text-xl">15+ Years</div>
+            <div className="font-bold text-xl">Greatness</div>
             <div className="text-sm">of Excellence</div>
           </div>
               </div>
               
               <div className="absolute -top-0 -right-4 bg-white p-4 rounded-lg shadow-xl animate-float delay-200">
           <div className="text-[#23395d]">
-            <div className="font-bold text-xl">500+</div>
+            <div className="font-bold text-xl">200+</div>
             <div className="text-sm">Happy Students</div>
           </div>
               </div>
@@ -362,8 +362,8 @@ function Home() {
                   />
                   <div className="absolute -bottom-4 -right-4 bg-white p-4 rounded-lg shadow-xl">
                     <div className="flex flex-col items-center">
-                      <p className="text-[#23395d] font-bold text-2xl">15+ Years</p>
-                      <p className="text-gray-600 text-sm">of Excellence</p>
+                      {/* <p className="text-[#23395d] font-bold text-2xl">Greatness</p>
+                      <p className="text-gray-600 text-sm">of Excellence</p> */}
                     </div>
                   </div>
                   </div>
@@ -681,12 +681,12 @@ function Home() {
               {
                 text: "The nurturing environment and dedicated teachers have made a remarkable difference in my child's development.",
                 author: "Riddhi G.",
-                role: "Parent of Kanishka"
+                role: "Parent of Siddesh"
               },
               {
                 text: "We're amazed by the progress our daughter has made. The curriculum is engaging and well-structured.",
                 author: "Padma.",
-                role: "Parent of Siddesh "
+                role: "Parent of Kanishka "
               },
               {
                 text: "The school's approach to learning through play has helped my son develop a love for learning.",
