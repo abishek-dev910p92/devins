@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+@layer base {
+  :root {
+    --primary: #23395d;
+    --secondary: #a186b0;
+    --accent: #ffdf5a;
+    --text-primary: #1a2942;
+    --text-secondary: #4a5568;
+    --background-light: #f7f9fc;
+  }
+
+  body {
+    @apply bg-[#f7f9fc];
+  }
+}
+
+.container-wide {
+  @apply max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-12;
+}
+
+.btn-primary {
+  @apply bg-[#23395d] text-white px-6 py-3 rounded-md hover:bg-opacity-90 transition duration-300 shadow-md hover:shadow-lg;
+}
+
+.btn-secondary {
+  @apply bg-[#ffdf5a] text-[#23395d] px-6 py-3 rounded-md hover:bg-opacity-90 transition duration-300 font-semibold shadow-md hover:shadow-lg;
+}
+
+.section-title {
+  @apply text-3xl font-bold text-[#23395d] mb-6;
+}
+
+.card {
+  @apply bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 border-2 border-transparent hover:border-[#23395d]/10;
+}
+
+.input-field {
+  @apply w-full px-4 py-3 border border-[#a186b0]/30 rounded-md focus:outline-none focus:ring-2 focus:ring-[#23395d] bg-white;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #23395d 0%, #a186b0 100%);
+}
+
+.page-header {
+  @apply bg-gradient-to-b from-[#23395d] to-[#a186b0] text-white py-20;
+}
+
+.page-content {
+  @apply container-wide py-12;
+}
+
+.hover-card {
+  @apply transition-all duration-300 hover:scale-105 hover:shadow-xl;
+}
+
+.nav-link {
+  @apply text-[#23395d] hover:text-[#a186b0] transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#ffdf5a] after:transition-all hover:after:w-full;
+}
+
+.section-bg-primary {
+  @apply bg-[#23395d]/5;
+}
+
+.section-bg-secondary {
+  @apply bg-[#a186b0]/5;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#23395d] to-[#a186b0];
+}
