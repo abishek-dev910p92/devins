@@ -68,7 +68,22 @@ function Careers() {
                       ))}
                     </ul>
                   </div>
-                  <button className="btn-primary w-full mt-4">Apply Now</button>
+                  <button
+                    className="btn-primary w-full mt-4"
+                    onClick={() => {
+                      const subject = encodeURIComponent(`Application for ${position.title}`);
+                      const body = encodeURIComponent(
+                        `Hello,\n\nI am interested in applying for the position of ${position.title}.\n\n` +
+                        `Departments: ${position.departments.join(', ')}\n` +
+                        `Requirements: ${position.requirements.join(', ')}\n\n` +
+                        `Please find my details below:\n` +
+                        `Name:\nContact:\nEmail:\nResume Link:\n\nThank you!`
+                      );
+                      window.location.href = `mailto:info@deeveeninternational.com?subject=${subject}&body=${body}`;
+                    }}
+                  >
+                    Apply Now
+                  </button>
                 </div>
               </div>
             ))}
